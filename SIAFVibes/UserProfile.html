@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAF Vibes - Profile</title>
+    <link rel="stylesheet" href="CSS/UserProfile.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="50x50"
+      href="Assets/Pictures/SiafVibesLogo.png"
+    />
+    <!-- Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <button class="back-button" onclick="goBack()" aria-label="Go Back">
+        <span class="back-arrow">←</span>
+        <span>Back</span>
+      </button>
+
+      <!-- Profile Header Section -->
+      <div class="profile-header">
+        <div class="avatar">
+          <img
+            src="Assets/Pictures/profile-icon-profileOverview.png"
+            alt="Profile Picture"
+            loading="lazy"
+          />
+        </div>
+        <div class="profile-name">Dexter Inigo</div>
+
+        <div class="listening-hours">
+          <div class="hours-number" id="hoursNumber">420</div>
+          <div class="hours-label">Hours Played This Month</div>
+        </div>
+
+        <button class="logout-btn" onclick="handleLogout()" aria-label="Logout">
+          <span>Logout</span>
+        </button>
+      </div>
+
+      <!-- Recently Played Section -->
+      <div class="recent-played">
+        <div class="section-title">
+          <div class="music-icon">🎵</div>
+          Recently Played
+        </div>
+
+        <div
+          class="track"
+          onclick="playTrack('Blinding Lights', 'The Weeknd')"
+          role="button"
+          tabindex="0"
+        >
+          <div class="track-cover">
+            <img
+              src="Assets/Pictures/The_Weeknd_Starboy.png"
+              alt="Blinding Lights Album Cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="track-info">
+            <div class="track-name">Blinding Lights</div>
+            <div class="track-artist">The Weeknd</div>
+          </div>
+          <div class="play-time">2 min ago</div>
+        </div>
+
+        <div
+          class="track"
+          onclick="playTrack('HUMBLE.', 'Kendrick Lamar')"
+          role="button"
+          tabindex="0"
+        >
+          <div class="track-cover">
+            <img
+              src="Assets/Pictures/Kendrick_Lamar_Damn.png"
+              alt="HUMBLE. Album Cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="track-info">
+            <div class="track-name">HUMBLE.</div>
+            <div class="track-artist">Kendrick Lamar</div>
+          </div>
+          <div class="play-time">15 min ago</div>
+        </div>
+
+        <div
+          class="track"
+          onclick="playTrack('Yoru ni Kakeru', 'YOASOBI')"
+          role="button"
+          tabindex="0"
+        >
+          <div class="track-cover">
+            <img
+              src="Assets/Pictures/Yoasobi_The_Book.png"
+              alt="Yoru ni Kakeru Album Cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="track-info">
+            <div class="track-name">Yoru ni Kakeru</div>
+            <div class="track-artist">YOASOBI</div>
+          </div>
+          <div class="play-time">32 min ago</div>
+        </div>
+
+        <div
+          class="track"
+          onclick="playTrack('APT', 'ROSÉ')"
+          role="button"
+          tabindex="0"
+        >
+          <div class="track-cover">
+            <img
+              src="Assets/Pictures/APT_Album.png"
+              alt="APT Album Cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="track-info">
+            <div class="track-name">APT</div>
+            <div class="track-artist">ROSÉ</div>
+          </div>
+          <div class="play-time">1 hour ago</div>
+        </div>
+
+        <div
+          class="track"
+          onclick="playTrack('DNA.', 'Kendrick Lamar')"
+          role="button"
+          tabindex="0"
+        >
+          <div class="track-cover">
+            <img
+              src="Assets/Pictures/Kendrick_Lamar_Damn.png"
+              alt="DNA. Album Cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="track-info">
+            <div class="track-name">DNA.</div>
+            <div class="track-artist">Kendrick Lamar</div>
+          </div>
+          <div class="play-time">2 hours ago</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

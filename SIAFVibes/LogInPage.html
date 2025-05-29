@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAF Vibes - LogIn</title>
+    <link rel="stylesheet" href="CSS/LogInPage.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="50x50"
+      href="Assets/Pictures/SiafVibesLogo.png"
+    />
+  </head>
+  <body>
+    <img
+      src="Assets/Pictures/SiafVibesLogo.png"
+      alt="SIAF Vibes Logo"
+      class="logo"
+    />
+    <div class="description-container">
+      <p class="description">
+        Welcome to SIAF Vibes, your vibing music hub. Log in to unlock the world
+        of unlimited songs, playlist, and exclusive local artist content.
+      </p>
+    </div>
+    <div class="signup-container">
+      <p class="txtSignup">
+        Don't have an account?
+        <button class="btnSignup">
+          <a href="Register.html">Sign-Up</a>
+        </button>
+      </p>
+    </div>
+    <div class="container">
+      <div class="right-section">
+        <h2><strong>Welcome Back</strong></h2>
+        <p>Enter your email and password to access your account</p>
+        <form action="PHP/LoginPage.php" method="POST">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <div class="options">
+            <label> <input type="checkbox" /> Remember me </label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btnLogin">Log In</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

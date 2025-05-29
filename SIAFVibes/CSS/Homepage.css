@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Jaro';
+}
+
+.showcase {
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.logo {
+  width: 125px;
+  height: 100px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.text h3 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #a537f3;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.menu {
+  position: relative;
+  z-index: 20;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.FreeTrial {
+  display: inline-block;
+  font-size: 1em;
+  background: #a537f3;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+
+.FreeTrial:hover {
+  letter-spacing: 6px;
+}
+
+/*
+    website service
+*/
+
+.servicesClass {
+  padding: 80px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.servicesClass h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceBox {
+  background-color: #abcdef;
+  border-radius: 28px;
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+}
+
+.serviceImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.serviceImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.serviceText {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.serviceText h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.serviceText p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* Special cases */
+.djBox .serviceText {
+  align-items: center;
+  text-align: center;
+}
+
+.premiumBox {
+  grid-column: span 2;
+  background-color: #6c33ff;
+  color: white;
+  height: 150px;
+}
+
+.premiumBox .serviceText.fullWidth {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.premiumBox p {
+  font-size: 28px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/*
+Premium plans
+*/
+
+.premiumPlans {
+  padding: 80px 50px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  font-family: 'Jaro', sans-serif;
+}
+
+.premiumIntro {
+  font-size: 20px;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.planContainer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.planBox {
+  background: linear-gradient(145deg, #6c33ff, #b966ff);
+  padding: 40px 30px;
+  border-radius: 25px;
+  width: 320px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.planBox h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.planBox p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.planBox ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.planBox li {
+  margin: 12px 0;
+  position: relative;
+  padding-left: 25px;
+  font-size: 15px;
+}
+
+.planBox li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.planBox button {
+  background-color: white;
+  color: #6c33ff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.planBox button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-button {
+  display: inline-block;
+  font-size: 1em;
+  background: #a537f3;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-button:hover {
+  letter-spacing: 6px;
+}

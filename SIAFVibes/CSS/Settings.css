@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #d3bdf0;
+  color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-btn,
+.back-btn {
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.icon-btn:hover,
+.back-btn:hover {
+  background: #5c0ca8;
+  color: white;
+}
+
+.icon-btn img,
+.back-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.try-premium {
+  background-color: #eee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.try-premium:hover {
+  background: #5c0ca8;
+  color: white;
+}
+
+.card {
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card p {
+    margin-left: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.rect-button {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rect-button:hover {
+  background: #5c0ca8;
+  color: white;
+}
+
+.rect-button .icon-btn {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Jaro';
+  src: url('font/Jaro-Regular-VariableFont_opsz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jaldi';
+  src: url('font/Jaldi-Regular-VariableFont_opsz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/SIAFVibes/Assets/Pictures/backgroundSignup.png) no-repeat
+    center/cover;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 450px;
+  background: #1e042d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+.signup-box {
+  width: 100%;
+  background: #1e042d;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.signup-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.signup-box p {
+  margin: 10px 0;
+}
+
+.signup-box label {
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.signup-box input {
+  text-align: left;
+}
+
+.btnLogin,
+.btnSignup {
+  align-self: flex-start;
+}
+
+.btnLogin {
+  background: #989898;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btnLogin:hover {
+  background: #5c0ca8;
+  color: white;
+}
+
+.signup-box label {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.terms input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.terms label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnSignup {
+  margin-top: 15px;
+  background: #989898;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btnSignup:hover {
+  background: #5c0ca8;
+  color: white;
+}
+
+.right-content {
+  position: absolute;
+  right: 50px;
+  transform: translateY(-50%); /* Center vertically */
+  max-width: 400px;
+  color: #ffffff;
+  text-align: right;
+  top: 73%;
+  width: 50%;
+  font-family: 'Jaldi', sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: -600px;
+  right: 50px;
+  width: 250px;
+  display: block;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.5;
+  line-break: 1.5;
+  font-family: Jaro, sans-serif;
+  bottom: -550px;
+  right: 50px;
+  max-width: 400px;
+  text-align: right;
+  /* Text outline properties */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}

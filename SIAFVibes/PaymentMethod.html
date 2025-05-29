@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAF Vibes - Premium - Payment Method</title>
+    <script src="JS/PaymentMethod.js"></script>
+    <link rel="stylesheet" href="CSS/PaymentMethod.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="50x50"
+      href="Assets/Pictures/SiafVibesLogo.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-nav">
+        <button class="back-btn" onclick="goBack()">
+          <span class="back-arrow">←</span>
+          <span class="back-text">Back to Home</span>
+        </button>
+      </div>
+
+      <div class="header">
+        <div class="logo">
+          <img
+            src="Assets/Pictures/SiafVibesLogo.png"
+            alt="SIAFVibesLogo"
+            sizes="50x50"
+          />
+        </div>
+        <h1 class="title">SIAF Vibes</h1>
+        <p class="subtitle">Unlimited music, ad-free listening</p>
+      </div>
+
+      <div class="plan-card" onclick="selectPlan(this)">
+        <div class="plan-info">
+          <div>
+            <div class="plan-name">Premium Subscription</div>
+            <div class="plan-features">
+              Ad-free Listening • Unlimited Skips • Offline MP3 Downloads •
+              Customized Playlists
+            </div>
+          </div>
+          <div class="plan-price">₱149.99/mo</div>
+        </div>
+      </div>
+
+      <div class="plan-card2" onclick="selectPlan(this)">
+        <div class="plan-info">
+          <div>
+            <div class="plan-name">Duo Plan Subscription</div>
+            <div class="plan-features">
+              Ad-free Listening • Unlimited Skips • Offline MP3 Downloads •
+              Customized Playlists • Two Individual Accounts • Duo Mix
+            </div>
+          </div>
+          <div class="plan-price">₱349.99/mo</div>
+        </div>
+      </div>
+
+      <div class="plan-card3" onclick="selectPlan(this)">
+        <div class="plan-info">
+          <div>
+            <div class="plan-name">Family Plan Subscription</div>
+            <div class="plan-features">
+              Ad-free Listening • Unlimited Skips • Offline MP3 Downloads •
+              Customized Playlists • Hi-Fi, Lossless Audio • Exclusively Early
+              Access • Priority Customer Support
+            </div>
+          </div>
+          <div class="plan-price">₱449.99/mo</div>
+        </div>
+      </div>
+
+      <div class="payment-methods">
+        <h3 class="section-title">Payment Method</h3>
+
+        <div class="payment-option selected" onclick="selectPayment(this)">
+          <div class="payment-icon visa">BDO</div>
+          <div class="payment-details">
+            <div class="payment-name">Credit Card</div>
+            <div class="payment-info">•••• 4242</div>
+          </div>
+          <div class="radio"></div>
+        </div>
+
+        <div class="payment-option" onclick="selectPayment(this)">
+          <div class="payment-icon mastercard">MC</div>
+          <div class="payment-details">
+            <div class="payment-name">MasterCard</div>
+            <div class="payment-info">•••• 8888</div>
+          </div>
+          <div class="radio"></div>
+        </div>
+
+        <div class="payment-option" onclick="selectPayment(this)">
+          <div class="payment-icon paypal">Maya</div>
+          <div class="payment-details">
+            <div class="payment-name">PayMaya</div>
+            <div class="payment-info">yourname@example.com</div>
+          </div>
+          <div class="radio"></div>
+        </div>
+
+        <div class="payment-option" onclick="selectPayment(this)">
+          <div class="payment-icon apple-pay">G</div>
+          <div class="payment-details">
+            <div class="payment-name">G-Cash</div>
+            <div class="payment-info">+63-•••-•••-••••</div>
+          </div>
+          <div class="radio"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Cardholder Name</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Your card name here."
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Card Number</label>
+        <input
+          type="text"
+          class="form-input card-number"
+          placeholder="Your card number here."
+        />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Expiry Date</label>
+          <input
+            type="text"
+            class="form-input expiry-date"
+            placeholder="MM/YY"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label">CVV</label>
+          <input type="text" class="form-input" placeholder="123" />
+        </div>
+      </div>
+
+      <div class="security-info">
+        <div class="security-icon">🔒</div>
+        <div class="security-text">
+          Your payment information is encrypted and secure
+        </div>
+      </div>
+
+      <button class="subscribe-btn" onclick="processPayment()">
+        Start Premium Subscription
+      </button>
+
+      <div class="terms">
+        By subscribing, you agree to our <a href="#">Terms of Service</a> and
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </body>
+</html>
